@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lê Phúc Danh - Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-theme">
+    <!-- Navigation -->
+    <div class="quick-nav">
+        <a href="#about" class="nav-link about">Giới Thiệu</a>
+        <a href="#projects" class="nav-link projects">Dự Án</a>
+        <a href="#contact" class="nav-link contact">Liên Hệ</a>
+    </div>
+
+    <button id="scrollToTopBtn" class="scroll-to-top">
+        ↑
+    </button>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
+
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="profile-container" data-aos="zoom-in-up">
+                <img src="avatar.jpg" alt="Avatar" class="profile-avatar">
+                <div class="avatar-border"></div>
+            </div>
+            <h1 data-aos="fade-up" data-aos-delay="200">Lê Phúc Danh</h1>
+            <h2 data-aos="fade-up" data-aos-delay="400">Chuyên Ngành Khoa Học Máy Tính</h2>
+        </div>
+    </header>
+
+    <!-- Giới thiệu bản thân -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <h2>Giới Thiệu Bản Thân</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="about-content" data-aos="fade-up">
+            <p>Xin chào! Tôi là Lê Phúc Danh, một sinh viên khoa học máy tính. Một số ngôn ngữ và ứng dụng tôi sử dụng
+                bao gồm:</p>
+        </div>
+        <div class="skill-badges" data-aos="fade-up" data-aos-delay="600">
+            <img src="https://skillicons.dev/icons?i=js,ts,react,nodejs,py,java,aws,docker" alt="Technical Skills">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <h2>Dự Án Tiêu Biểu</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="projects-carousel">
+            <div class="carousel-container"></div>
+            <div class="carousel-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="dots-container"></div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2>Liên Hệ</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card" data-aos="zoom-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Địa Chỉ</h3>
+                        <p>TP. HCM</p>
+                    </div>
+                </div>
+                <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>danhle.coder@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="contact-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Trường học</h3>
+                        <p>Đại học Công nghiệp TP.HCM</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/danhlecoder" class="social-icon" data-aos="zoom-in"
+                        data-aos-delay="200">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://facebook.com/lephuc.danh.73" class="social-icon" data-aos="zoom-in"
+                        data-aos-delay="400">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form" data-aos="zoom-in">
+                <div class="form-group">
+                    <input type="text" placeholder="Họ tên" name="name" required>
+                    <div class="underline"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" name="email" required>
+                    <div class="underline"></div>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Nội dung" name="message" required></textarea>
+                    <div class="underline"></div>
+                </div>
+                <button type="submit" class="submit-btn">
+                    Gửi Tin Nhắn
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
